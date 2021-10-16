@@ -71,12 +71,15 @@ public class guiarrayy extends JFrame {
 		contentPane.add(lbHo);
 		
 		txtHo = new JTextField();
+		
 		txtHo.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
 				lblstt.setText("");
 			}
 		});
+		
+		
 		txtHo.setBounds(251, 55, 247, 19);
 		contentPane.add(txtHo);
 		txtHo.setColumns(10);
@@ -85,6 +88,7 @@ public class guiarrayy extends JFrame {
 		ArrayList<String> dsPhu = new ArrayList<String>();
 		
 		btnAdd = new JButton("Thêm");
+		
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
@@ -93,19 +97,24 @@ public class guiarrayy extends JFrame {
 			
 			}
 		});
+		
+		
 		btnAdd.setBounds(251, 84, 102, 21);
 		contentPane.add(btnAdd);
-		
 		btnShow = new JButton("Hiển thị");
+		
+		
 		btnShow.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				hienThiDanhSach(dsTen);
 				
 			}
 		});
+		
+		
 		btnShow.setBounds(65, 133, 85, 21);
 		contentPane.add(btnShow);
-		
+
 		 trShow = new TextArea();
 		trShow.setBounds(65, 160, 270, 150);
 		contentPane.add(trShow);
@@ -126,6 +135,8 @@ public class guiarrayy extends JFrame {
 		contentPane.add(label);
 		
 		JButton btnFind = new JButton("Tìm Kiếm");
+		
+		
 		btnFind.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				boolean result = false;
@@ -158,6 +169,8 @@ public class guiarrayy extends JFrame {
 				
 			}
 		});
+		
+		
 		btnFind.setBounds(380, 84, 118, 21);
 		contentPane.add(btnFind);
 	}
